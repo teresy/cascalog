@@ -26,7 +26,7 @@
   FlowProcess and operation call by Cascading on instantiation, false
   otherwise."
   [op]
-  (= true (-> op meta ::prepared)))
+  (true? (-> op meta ::prepared)))
 
 (d/defdefop defprepfn
   "Defines a prepared operation."
